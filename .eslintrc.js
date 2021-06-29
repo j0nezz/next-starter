@@ -604,7 +604,8 @@ module.exports = {
     'promise/no-nesting': 'error',
     'promise/no-promise-in-callback': 'error',
     'promise/valid-params': 'error',
-    'no-shadow': [
+    'no-shadow': 'off',
+    '@typescript-eslint/no-shadow': [
       'error',
       {
         builtinGlobals: false,
@@ -657,7 +658,8 @@ module.exports = {
     'import/extensions': 'off',
     '@typescript-eslint/no-use-before-define': 0,
     'import/no-unassigned-import': 0,
-    '@typescript-eslint/no-explicit-any': 0
+    '@typescript-eslint/no-explicit-any': 0,
+    '@typescript-eslint/explicit-module-boundary-types': 'off'
   },
   settings: {
     react: {
