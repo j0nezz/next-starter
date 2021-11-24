@@ -1,13 +1,15 @@
-import React from 'react';
 import {useRouter} from 'next/router';
+import React from 'react';
+import {Background} from '../components/ui/background';
+import {Title} from '../components/ui/title';
 
 const Slug: React.FC = () => {
   const router = useRouter();
   const {slug} = router.query;
   return (
-    <div>
-      <h1>This page ready query params: {slug}</h1>
-    </div>
+    <Background>
+      <Title>This page ready query params: {slug}</Title>
+    </Background>
   );
 };
 
