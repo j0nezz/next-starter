@@ -1,6 +1,5 @@
 {
   "processors": ["stylelint-processor-styled-components"],
-  "plugins": ["stylelint-no-unsupported-browser-features"],
   "extends": [
     "stylelint-config-recommended",
     "stylelint-config-styled-components"
@@ -43,26 +42,9 @@
     "number-no-trailing-zeros": true,
     "value-no-vendor-prefix": true,
     "shorthand-property-no-redundant-values": true,
-    "string-quotes": "double",
+    "string-quotes": "single",
     "number-max-precision": 2,
-    "unit-allowed-list": ["px", "%", "s", "fr"],
-    "plugin/no-unsupported-browser-features": [
-      true,
-      {
-        "ignore": [
-          // TODO Remove CSS grid or test in Edge
-          "multicolumn",
-          // These properties are not supported everywhere but should not break the layout too badly
-          "wordwrap",
-          "word-break",
-          "outline",
-          "css-appearance",
-          // Remove errors about partial supports as it refers to not supporting vmax which we don't use at time of writing.
-          // Easier to ignore here
-          "viewport-units",
-          "object-fit"
-        ]
-      }
-    ]
+    "unit-allowed-list": ["px", "%", "s", "fr", "rem", "vw", "vh", "deg"]
+
   }
 }
