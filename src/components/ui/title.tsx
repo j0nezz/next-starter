@@ -25,9 +25,8 @@ export const Title = styled.h1`
 
   background-size: 400% 400%;
   animation: ${BackgroundAnimation} 5s linear infinite;
-  /*
+
+  /* stylelint-disable property-no-vendor-prefix */
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  
-   */
 `;
