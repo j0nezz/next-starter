@@ -21,6 +21,7 @@ module.exports = {
     'eslint-plugin-no-inline-styles'
   ],
   extends: [
+    'next/core-web-vitals',
     'plugin:@typescript-eslint/recommended',
     'eslint:recommended',
     'plugin:import/errors',
