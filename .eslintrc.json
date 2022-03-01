@@ -1,0 +1,39 @@
+{
+  "plugins": [
+    "@typescript-eslint/eslint-plugin",
+    "10x",
+    "prettier",
+    "react-hooks",
+    "eslint-plugin-no-inline-styles"
+  ],
+  "extends": ["next", "prettier"],
+  "rules": {
+    "indent": "off",
+    "no-inline-styles/no-inline-styles": 2,
+    "react/jsx-curly-brace-presence": "off",
+    "require-atomic-updates": "off",
+    "10x/no-full-import": "error",
+    "10x/react-in-scope": "error",
+    "10x/auto-import": [
+      "error",
+      {
+        "imports": {
+          "xns": "import xns from 'xns'",
+          "styled": "import styled from 'styled-components'",
+          "sortBy": "import sortBy from 'lodash/sortBy'",
+          "groupBy": "import groupBy from 'lodash/groupBy'",
+          "isEmpty": "import isEmpty from 'lodash/isEmpty'",
+          "lighten": "import {lighten} from 'polished'",
+          "getWeeksInMonth": "import {getWeeksInMonth} from 'date-fns'",
+          "startOfMonth": "import {startOfMonth} from 'date-fns'",
+          "getDaysInMonth": "import {getDaysInMonth} from 'date-fns'",
+          "getISODay": "import {getISODay} from 'date-fns'",
+          "format": "import {format} from 'date-fns'",
+          "getWeek": "import {getWeek} from 'date-fns'",
+          "setDate": "import {setDate} from 'date-fns'",
+          "endOfWeek": "import {endOfWeek} from 'date-fns'",
+          "startOfWeek": "import {startOfWeek} from 'date-fns'"
+        }
+      }]
+  }
+}

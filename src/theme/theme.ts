@@ -1,16 +1,6 @@
 import {CSSProperties} from 'react';
 import {createGlobalStyle, ThemeProviderProps} from 'styled-components';
 
-type Props = {
-  googleUrl: string;
-};
-
-export const MainTheme: CSSProperties & Props = {
-  fontFamily: 'Roboto, sans-serif',
-  googleUrl:
-    'https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;500;700;900&display=swap'
-};
-
 // Colors Palette https://colorhunt.co/
 export enum __COLORS {
   CTA = '#e94560',
@@ -43,13 +33,18 @@ export enum __ALERTS {
   WARNING = '#fb6240',
   ERROR = '#f5365c'
 }
+
+type Props = {};
+
+export const MainTheme: CSSProperties & Props = {
+  fontFamily: 'Open Sans, sans-serif'
+};
 // You can either import a Google Font: https://fonts.google.com
 // Or declare a custom font: https://tinyurl.com/y6omstqa
 // eslint-disable-next-line no-unexpected-multiline
 export const GlobalStyle = createGlobalStyle<{
   theme: ThemeProviderProps<any>;
 }>`
-  @import url(${MainTheme.googleUrl});
   *, ::after, ::before {
     box-sizing: border-box;
   }
