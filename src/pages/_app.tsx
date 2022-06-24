@@ -1,13 +1,28 @@
+import {makeTheme} from 'axelra-react-utilities';
+import {NextPage} from 'next';
+import {DefaultSeo} from 'next-seo';
 import {AppProps} from 'next/app';
-import React from 'react';
+import {ReactElement, ReactNode} from 'react';
 import {ThemeProvider} from 'styled-components';
-import {GlobalStyle, MainTheme} from '../theme/theme';
+import SEO from '../lib/next-seo.config';
+import {GlobalStyle} from '../theme/theme';
 
-const App: React.FC<AppProps> = ({Component, pageProps}) => {
+type NextPageWithLayout = NextPage & {
+  getLayout?: (page: ReactElement) => ReactNode;
+};
+
+type AppPropsWithLayout = AppProps & {
+  Component: NextPageWithLayout;
+};
+
+const App = ({Component, pageProps}: AppPropsWithLayout) => {
+  const getLayout = Component.getLayout ?? (page => page);
+
   return (
-    <ThemeProvider theme={MainTheme}>
+    <ThemeProvider theme={makeTheme({})}>
+      <DefaultSeo {...SEO} />
       <GlobalStyle />
-      <Component {...pageProps} />
+      {getLayout(<Component {...pageProps} />)}
     </ThemeProvider>
   );
 };

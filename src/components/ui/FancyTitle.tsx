@@ -1,3 +1,4 @@
+import {H1} from 'axelra-react-utilities';
 import styled, {keyframes} from 'styled-components';
 
 const BackgroundAnimation = keyframes`
@@ -11,10 +12,7 @@ const BackgroundAnimation = keyframes`
     background-position: 0% 50%;
   }
 `;
-export const Title = styled.h1`
-  font-size: 4rem;
-  font-family: 'Open Sans', sans-serif;
-  font-weight: bold;
+export const FancyTitle = styled(H1)`
   background-color: #4158d0;
   background-image: linear-gradient(
     43deg,
