@@ -6,7 +6,9 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "test": "next lint"
+    "test": "next lint && yarn lint:css",
+    "lint:css":"stylelint './src/**/*.{tsx,js,ts}'"
+
   },
   "dependencies": {
     "axelra-react-utilities": "^0.0.8",

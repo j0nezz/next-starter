@@ -21,7 +21,7 @@ export const GlobalStyle = createGlobalStyle<{
     box-sizing: border-box;
 }
   html {
-    font-family: "Open Sans", sans-serif;
+    font-family: 'Open Sans', sans-serif;
   }
   body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,form,fieldset,input,textarea,p,blockquote,th,td { 
     margin: 0;
