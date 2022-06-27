@@ -576,10 +576,10 @@ axe-core@^4.3.5:
   resolved "https://registry.yarnpkg.com/axe-core/-/axe-core-4.4.2.tgz#dcf7fb6dea866166c3eab33d68208afe4d5f670c"
   integrity sha512-LVAaGp/wkkgYJcjmHsoKx4juT1aQvJyPcW09MLCjVTh3V2cc6PnyempiLMNH5iMdfIX/zdbjUx2KDjMLCTdPeA==
 
-axelra-react-utilities@^0.0.8:
-  version "0.0.8"
-  resolved "https://registry.yarnpkg.com/axelra-react-utilities/-/axelra-react-utilities-0.0.8.tgz#07e91d138faf56ba302c4948fb9ff1dc10096d46"
-  integrity sha512-/NVaQgXVrQjhr6o0BxOxT145/F91Rsi+1xjzrv9VoeUTORELOTFMmBrWSmvd8reGH26yO7BYoJ83SJcEBbKqWA==
+axelra-react-utilities@^0.1.0:
+  version "0.1.0"
+  resolved "https://registry.yarnpkg.com/axelra-react-utilities/-/axelra-react-utilities-0.1.0.tgz#e01f5467a540cbd16e5988d304897333736b1332"
+  integrity sha512-2VzFw3DMabOI07xkQbhryvRsLYprulghTsDFo0cCAZ/Q4tw8D+NiVKX1gn+GSMvK+tPDq0wQCVzG8nAik56YfA==
 
 axobject-query@^2.2.0:
   version "2.2.0"
