@@ -1,5 +1,5 @@
 # Next.js typescript styled-components starter
-This is a starter template for Next.js giving you a head start when building with **typescript** and **styled-components**.
+This is a starter template for Next.js giving you a headstart when building with **typescript** and **styled-components**.
 
 ## What's inside
 - Typescript

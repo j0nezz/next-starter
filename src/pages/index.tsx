@@ -43,16 +43,11 @@ const Home = () => {
       </H2>
       <Text block center>
         Axelra-React-Utilities can be configured differently using the{' '}
-        <a href={'https://nextjs.org/docs/basic-features/layouts'}>
+        <Link href={'https://nextjs.org/docs/basic-features/layouts'}>
           layout pattern
-        </a>
-        .<br /> Check out this{' '}
-        <Link href={'/other'} passHref>
-          <Text weight={'Bold'} as={'a'}>
-            Other Page
-          </Text>
-        </Link>{' '}
-        to see it in action
+        </Link>
+        .<br /> Check out this <Link href={'/other'}>Other Page</Link> to see it
+        in action
       </Text>
     </Container>
   );
